@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    body{
+        
+        background-color: rgb(164, 168, 160);
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0px;       
+        padding: 6px; 
+    }
+  
+    
+    #divpri{
+        background-color: bisque;
+        margin: 0px 120px 0px 120px;
+        padding: 1px 0px 500px 0px;
+        border-radius: 6px;
+        box-shadow: 0px 2px 7px black;
+    }
+    div#divpri > p{
+    background-attachment: nan;
+    }
+    div#div2 {
+        box-shadow:  0px 0px 10px black  ;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    div#div2 > p:hover{
+        color: rgb(39, 102, 10);
+        box-shadow: 0px 0px 4px;
+        margin:  0px 200px 0px 200px ;
+    }
+  
+</style>
+
+<body>
+  <div id="divpri">
+    <h1>treinando variaveis</h1>
+    <p>estou treinando java sscript</p>
+    <div id="div2">
+        <p>letras com animaçao de cor</p>
+        <p>passa o mouse aqui</p>
+    </div>
+  </div>
+
+
+<script>
+   
+alert("treino de var ok?")
+alert("vamos começa vc tera que escoler 2 numeros ")
+var n1 = Number(prompt('digite um numero'))
+var n2 = Number(prompt('digite outro numero'))
+r = n1 + n2
+alert(`sua soma entre ${n1} e ${n2} o resutado e  ${r}`)
+var nome = prompt("qual e o seu nome ?")
+var idade = prompt("qual e sua idade ?")
+var peso = prompt("qual e seu peso")
+alert(`Nome do usuario é ${nome} e a idade é ${idade} e o peso é ${peso}`)
+
+
+</script>
+</body>
+
+</html>

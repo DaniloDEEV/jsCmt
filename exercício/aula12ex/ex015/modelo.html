@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de exercicio</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+  <header>
+   <h1>verificador de idade</h1>
+   <p id="datadehoje"></p>
+  </header>
+
+  
+  <section>
+    <div>
+    <p>ano de nacimento:
+      <input type="number" id="txtano" name="txtano"min="0"><!--em JS é (fano) -->
+    </p>
+    <p>sexo
+    <input type="radio" name="radsex" id="mas"><!--em JS fsex [0] -->
+    <label for="mas">masculino</label>
+    <input type="radio" name="radsex" id="fem"><!--em JS fsex [1]-->
+    <label for="fem">feminino</label>
+    </p>
+    <p><input type="button" value="verificador" onclick="verificar()"></p>
+    </div>
+
+    <div id="res"><!-- res em Js  (res) -->
+    </div>
+  </section>
+    
+  <footer>
+  <p>&copy;curso em video</p>
+  </footer>
+
+         
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

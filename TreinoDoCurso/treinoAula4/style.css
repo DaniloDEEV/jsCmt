@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(106, 111, 116);
+    font-size: 33px;
+}
+
+
+h1{
+color: aliceblue;
+text-shadow: 2px 2px 2px black;
+}
+
+
+p{
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+   
+}

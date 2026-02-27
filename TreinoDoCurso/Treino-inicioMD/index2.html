@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: rgb(65, 65, 65);
+            font:normal 23px arial;
+            color: white;
+                }
+                h1#npagina{
+                   font-size: 10px;
+                               }
+    </style>
+</head>
+
+
+<body>
+    <h1 id="npagina">pagina 2</h1>
+    <h1>Iniciando estudo com DOM</h1>
+    <p>aqui vai o resutado </p>
+    <p>aprendendo usar <strong>DOM</strong>em Java script</p>
+    <div id="di"  >clique em mim</div>
+
+   
+</body>
+ <script>
+     
+    var h1 = window.document.getElementsByTagName("h1")[0]
+     document.write(h1.innerText)
+     h1.style.color = "blue"
+
+    
+     var d = document.getElementById("di")
+     d.addEventListener('click', clic)
+     function clic(){
+       d.innerHTML = "voce clico mesmo, muito bem"
+     }
+    
+
+
+    </script>
+</html>

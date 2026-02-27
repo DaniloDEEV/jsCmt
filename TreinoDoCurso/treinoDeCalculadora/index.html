@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora simples</title>
+
+<style>
+
+
+</style>
+
+
+
+
+</head>
+<body>
+    
+
+    <h1>inicio de calculadora</h1>
+    <input type="number" name="per1" id="per1"> +
+    <input type="number" name="per2" id="per2"><br><br>
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res"> <strong>resutado</strong></div>
+
+    <script>
+    function somar (){
+
+    var p1 = document.getElementById("per1")
+    var p2 = document.getElementById("per2")
+    var res = document.getElementById("res")
+    var n1 = Number(p1.value)
+    var n2 = Number(p2.value)
+    var s = n1 + n2
+    res.innerHTML = s
+     
+ 
+
+
+   
+    }
+
+    </script
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+background-color: rgb(0, 136, 255);
+    
+}
+div#content{
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 10px;
+   
+  
+    width: 650px;
+   
+    height: 500px;
+    margin:20px auto;
+
+    
+}
+
+
+#h1p{
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+
+}
+
+
+#Inicio{
+    padding-top: 25px;
+    padding-left: 20px;
+    font-size: 23px;
+}
+#fim{
+    padding-top: 25px;
+    padding-left: 20px;
+    font-size: 23px;
+}
+#passo{
+    padding-top: 25px;
+    padding-left: 20px;
+    font-size: 23px;
+}
+#contar{
+    margin-top: 20px;
+     margin-left: 20px;
+}
+    #res{
+    margin: 20px 0px 0px 20px;
+    font-size: larger;
+}

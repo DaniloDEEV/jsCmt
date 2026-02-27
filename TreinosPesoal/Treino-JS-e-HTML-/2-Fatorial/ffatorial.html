@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatorial</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Fundo gradiente bonito */
+body {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+/* Caixa principal */
+main {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 35px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+/* Input e botão */
+.caixa {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #00e5ff;
+}
+
+/* Botão */
+button {
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ffb300, #ff8f00);
+}
+
+/* Resultado */
+#res {
+  margin-top: 18px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <main>
+    <h1>💫 Calcular Fatorial</h1>
+    <div class="caixa">
+      <input type="number" id="num" placeholder="Digite um número...">
+      <button onclick="calcular()">Calcular</button>
+    </div>
+    <p id="res">Resultado aparecerá aqui...</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

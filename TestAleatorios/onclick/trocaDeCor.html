@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocando cores</title>
+
+
+    <style>
+body{
+    background-color: rgb(66, 67, 69);
+    color: aliceblue;
+}
+p#p1{
+    font-size: 19px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#p2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    font-size: 29px;
+background-color: brown;
+height: 200px;
+width: 200px;
+line-height:200px ;
+text-align: center;
+}
+
+
+
+
+    </style>
+
+</head>
+<h1>como assim trocando de cor</h1>
+<p id="p1">exatamente em <strong>javascript</strong> vamos troca de cor com 1 click</p>
+<p id="p2">quando voce clicar no  quadrado irá muda de cor</p>
+
+<div onclick="clicar()" onmouseenter="entra()" onmouseout="saiu()" >aperte...</div>
+
+<body>
+    
+<script>
+
+var div = document.getElementsByTagName("div")[0]
+
+function clicar (){
+    div.style.background = "blue"
+    document.getElementsByTagName("div")[0].innerText = "apertou"
+}
+function saiu (){
+    div.style.background = "red"
+    document.getElementsByTagName("div")[0].innerText = "saiu"
+}
+
+function entra (){
+document.getElementsByTagName("div")[0].innerText = "entrou"
+ div.style.background = "purple"
+
+}
+
+
+
+
+</script>
+</body>
+
+
+</html>

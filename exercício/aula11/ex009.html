@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brasileiro</title>
+   <style>
+body{
+    background-color: rgba(0, 0, 0, 0.498);
+}
+
+    #pp1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    margin-left: 250px;
+    margin-right: 250px
+   }
+
+   #pais{
+    color: rgb(0, 0, 0);
+   }
+  
+   #res{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+   }
+
+    #input1:hover{
+        
+        background-color: rgba(0, 0, 0, 0.469);
+    }
+   div{
+    background-color: rgb(44, 47, 44);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100%;
+    
+   }
+   </style>
+
+
+</head>
+
+<body>
+    <div>      
+       <p id="pp1">onde voce mora</p>
+       <input type="text" id="input1" onmouseenter="entra()" onmouseout="sair()">
+       
+       <input type="button" value="verificar" id="pais" onclick="verificar()">
+       <p id="res"></p>
+    </div>
+
+
+<script>
+
+//comando para muda a cor quando passa o mouse em cima do elemento
+ function entra (){
+ var input1 = document.getElementById("input1")
+input1.style.background = "rgb(200, 230, 255)"
+ }
+
+ //comando para muda a cor quando tira o mouse do elemento 
+ function sair () {
+    var input1 = document.getElementById("input1")
+    input1.style.background = "white"
+ }
+
+
+var res = document.getElementById("res")
+//verificaçao de informaçoes do usuario
+function verificar () {
+  var input = document.getElementById("input1").value.toLowerCase()
+   if (input === "brasil")
+    res.innerHTML = "voce e brasileiro"
+   else
+    res.innerHTML = "Voce e estrangeiro"
+}
+</script>
+</body>
+
+</html>

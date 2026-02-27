@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+#container{
+    background-color: rgb(8, 169, 169);
+    display: flex ;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+
+    }
+
+#taskInput{
+    background-color: rgb(230, 225, 235);
+    cursor: auto;
+}
+#addBtn{
+    background-color: rgb(219, 193, 246);
+}
+#ulList{
+  list-style: none;
+  background-color: rgb(123, 118, 118);
+  color: rgb(255, 255, 255);
+  
+}

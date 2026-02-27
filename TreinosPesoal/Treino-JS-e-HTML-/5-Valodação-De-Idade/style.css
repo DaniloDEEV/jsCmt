@@ -1,0 +1,29 @@
+ 
+ body{
+    background-color: rgb(55, 87, 88);
+ }
+ 
+ main {
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgba(254, 228, 255, 0.483);
+  max-width: 1200px;
+  width: 60%;
+  margin: 0 auto;     
+  text-align: center;
+  padding-bottom: 150px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+#inp{
+    font-size: 20px
+}
+#botao{
+    font-size: 19px;
+}
+#res{
+    font-size: 23px;
+    font: optional;
+    
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste appendChild</title>
+</head>
+<body>
+  <h2>Adicionar texto com appendChild()</h2>
+
+  <input type="text" id="txt" placeholder="Digite algo">
+  <button onclick="adicionar()">Adicionar</button>
+
+  <div id="resultado"></div><br>
+<select name="" id="select"></select  >
+ <br>
+ <br>
+
+<!---------------- parte 1 ------------------>
+
+<input type="text" name="" id="esc">
+<input type="button" value=" add " id="add" onclick="chama()">
+<div id="ress"></div>
+<!---------------- parte 1 ------------------>
+  <script>
+
+ ///////////////////parte 1//////////////////////
+ //Inserir as variaveis
+  var esc = document.getElementById("esc")
+  var ress = document.getElementById("ress")
+     //fazendo a funçao
+  function chama(){
+     let tex = esc.value.trim() //tirando os espeços 
+
+    if(tex.length === 0){//verificando se esta vazio
+      alert("digite um nome")
+
+    }else{
+     var p = document.createElement("p")//criando o elemento
+     p.textContent = tex // covertando p para texto
+     ress.appendChild(p)
+     esc.focus()
+     esc.value = ""
+    }
+  }
+  ////////////////////parte 1/////////////////////////
+
+
+  /////////////////////////////////////////////////
+  let txt = document.getElementById("txt")
+  let res = document.getElementById("resultado")
+  let select = document.getElementById("select")
+  function adicionar(){
+
+  let escrever = txt.value.trim()
+    if(escrever.length === 0 ){
+      alert("numero invalido")
+    }else {
+      let option = document.createElement("option")
+      option.text = escrever
+      select.appendChild(option)
+      txt.value = ""
+      txt.focus()
+
+     
+      
+
+    }
+  }
+  </script>
+</body>
+</html>

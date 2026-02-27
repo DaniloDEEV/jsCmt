@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo on click</title>
+    <style>
+    body{
+        background-color: rgb(144, 124, 124);
+    }
+    #div1{
+         background-color: rgb(239, 237, 215);
+         width: 200px;
+         height: 200px;
+         line-height: 200px;
+         text-align: center;
+    }
+
+
+    </style>
+</head>
+<body>
+    
+<h1>click no quadrado abaixo</h1>
+<div id="div1" onclick="clicar()" onmouseout="sair">clíck aqui</div>
+
+
+
+
+
+    <script>
+    var c = document.getElementById('div1')
+   function clicar (){
+    
+    c.style.background = "blue"
+   }
+   function sair()
+   {
+    c.style.background = "yellow"
+   }
+ 
+    </script>
+</body>
+</html>
+
+

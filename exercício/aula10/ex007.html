@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sommando numeros</title>
+<style>
+ * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #3949ab;
+      margin-bottom: 25px;
+    }
+
+    .input-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input[type="number"] {
+      width: 80px;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #c5cae9;
+      border-radius: 10px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    input[type="number"]:focus {
+      border-color: #5c6bc0;
+    }
+
+    button {
+      background: #5c6bc0;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #3f51b5;
+      transform: scale(1.05);
+    }
+
+    #res {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #333;
+      background: #f1f8ff;
+      padding: 10px;
+      border-radius: 10px;
+      min-height: 30px;
+    }
+
+</style>
+
+
+
+</head>
+
+<body>
+    
+<h1>somando valores</h1>
+<input type="number" name="txtn1" id="txtn1">+
+<input type="number" name="txtn2" id="txtn2">
+<input type="button" value="somar" onclick="somar()">
+<div id="res">resutado</div>
+
+
+
+<script>
+    
+function somar(){
+ var tn1 = window.document.getElementById("txtn1")
+ var tn2 = window.document.querySelector("input#txtn2")
+ var res = window.document.getElementById("res")
+ var n1 =  Number(tn1.value)
+ var n2 = Number(tn2.value)
+ var resu = n1 + n2
+ res.innerHTML = resu
+ 
+}
+
+</script>
+
+</body>
+
+</html>
