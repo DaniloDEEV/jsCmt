@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2f2f2f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background-color: #ffffff;
+    min-height: 100dvh;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+#cabecalho {
+    background-color: #8c8f91;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+#config {
+    font-size: 20px;
+    cursor: pointer;
+
+    padding: 5px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+#config:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+#menu {
+    display: none;
+}
+
+
+#perfilmain {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    background-color: #e5e5e5;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+#perfil {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+#users {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    background-color: #d1e6e6;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+#search {
+    border: none;
+    outline: none;
+
+    border-radius: 6px;
+    padding: 5px;
+    width: 120px;
+}
+
+#search:focus {
+    box-shadow: 0 0 0 2px #4CAF50;
+}
