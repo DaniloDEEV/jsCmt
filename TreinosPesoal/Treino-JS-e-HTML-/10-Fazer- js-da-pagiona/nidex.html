@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 400px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+input, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    background: #334155;
+    color: white;
+}
+
+button {
+    background: #22c55e;
+    color: white;
+    cursor: pointer;
+}
+
+.lista {
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.item {
+    background: #334155;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Cadastro de Veículo</h2>
+
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="text" id="placa" placeholder="Placa">
+    <input type="text" id="transportadora" placeholder="Transportadora">
+
+    <button id="btn">Cadastrar</button>
+
+    <div class="lista" id="lista">
+    </div>
+   
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

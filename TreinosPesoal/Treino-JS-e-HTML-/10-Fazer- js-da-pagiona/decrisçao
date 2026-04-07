@@ -1,0 +1,36 @@
+Desafio: Sistema de Cadastro de Veículos (tipo o que você comentou)
+🧠 O que você vai ter que fazer no JS:
+Capturar os dados do formulário
+Validar (não deixar vazio)
+Adicionar na tela
+Limpar inputs
+(extra) remover item da lista
+
+-----------------------------------------------------
+
+Cria o script.js e faz:
+
+✅ Nível 1 (obrigatório)
+Quando clicar no botão:
+pegar nome, placa, transportadora
+mostrar na tela dentro da .lista
+----------------------------------------
+✅ Nível 2
+Se algum campo estiver vazio:
+mostrar alert("preencha tudo")
+----------------------------------------
+✅ Nível 3
+Limpar os inputs depois de cadastrar
+----------------------------------------
+🔥 Nível 4 (DESAFIO)
+Cada item ter um botão "remover"
+Ao clicar → remove da tela
+----------------------------------------
+💡 DICA (importante)
+Você vai usar MUITO:
+----------------------------------------
+document.getElementById
+addEventListener
+createElement
+appendChild
+innerHTML (ou melhor: evitar e usar createElement)
