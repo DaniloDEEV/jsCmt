@@ -18,30 +18,26 @@ body {
     background-position: center;
 }
 
-/* LAYOUT GERAL */
+/* LAYOUT */
 .container {
     display: flex;
     min-height: 100vh;
 }
 
-/* MENU LATERAL */
+/* MENU */
 header {
     width: 250px;
     padding: 30px;
-
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(10px);
-
     border-right: 1px solid rgba(255,255,255,0.1);
 }
 
-/* NOME */
 h1 {
     font-size: 22px;
     margin-bottom: 30px;
 }
 
-/* MENU */
 nav ul {
     list-style: none;
 }
@@ -53,11 +49,9 @@ nav li {
 nav a {
     display: block;
     padding: 10px;
-
     border-radius: 8px;
     text-decoration: none;
     color: #4da6ff;
-
     transition: 0.3s;
 }
 
@@ -66,40 +60,35 @@ nav a:hover {
     color: black;
 }
 
-/* CONTEÚDO PRINCIPAL */
+/* CONTEÚDO */
 .content {
     flex: 1;
     padding: 60px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-/* HERO */
 .content h2 {
     font-size: 40px;
-    margin-bottom: 10px;
 }
 
 .content p {
     font-size: 18px;
-    margin-bottom: 20px;
     color: #ccc;
 }
 
-/* BOTÃO */
+/* Botao */
 button {
     width: fit-content;
     padding: 12px 25px;
-
     border: none;
     border-radius: 8px;
-
     background: linear-gradient(45deg, #4da6ff, #1a8cff);
     color: white;
     font-weight: bold;
-
     cursor: pointer;
     transition: 0.3s;
 }
@@ -107,4 +96,38 @@ button {
 button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(77,166,255,0.6);
+}
+
+/* PROJETOS */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+/* ESCONdER */
+.escondido {
+    display: none;
 }
